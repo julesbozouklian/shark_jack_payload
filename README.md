@@ -3,7 +3,7 @@
 A portable network attack and automation tool for pentesters and systems administrators designed to enable social engineering engagements and opportunistic wired network auditing.
 
 # Payload
-
+https://github.com/julesbozouklian/shark_jack_payload/tree/main/payload
 
 # How to update
 
@@ -18,6 +18,10 @@ A portable network attack and automation tool for pentesters and systems adminis
  - From the Shark Jack's bash prompt, issue the sysupgrade command relevant to your firmware update file : ``` sysupgrade -n /tmp/upgrade-1.1.0.bin ```
  - Wait 5-10 minutes as the Shark Jack flashes the firmware and reboots. DO NOT unplug the device from USB power during this process as doing so will render the device inoperable.
 
+# Directory Structure
+- ``` /root/loot/ ``` – home to log files and other loot stored by payloads  
+- ``` /root/payload/ ``` – home to the payload which will execute when the switch is flipped to the Attack mode  
+- ``` /tmp/ ``` – volatile memory for temporary storage during payload execution  
 
 
 # Shark Jack Operation Modes
@@ -32,3 +36,13 @@ In attack mode, the Shark Jack will execute the payload.sh or payload.txt bash s
 In arming mode, the Shark Jack will be configured with a static IP address of 172.16.24.1 and will start an SSH server.
 
 With the Shark Jack in arming mode, you may access the embedded linux system via SSH. Connect the Shark Jack to your computer's Ethernet interface, specify a static IP address in the 172.16.24.0/24 range for this interface (for example 172.16.24.2) then establish an SSH connection to the Shark Jack at 172.16.24.1 (e.g. with the command "ssh root@172.16.24.1")
+
+# Led Status Indications
+| LED              | Status          | 
+| :--------------- |:--------------- | 
+| Green (blinking) | Booting up      |  
+| Blue (blinking)  | Charging        |   
+| Blue (solid)     | Fully Charged   |  
+| Yellow (blinking)| Arming Mode     | 
+| Red (blinking)   | Error - no payload found          | 
+
