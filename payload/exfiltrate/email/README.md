@@ -1,6 +1,6 @@
 - Install following packages : ``` msmtp mutt ```
 - Refer to this payload to install package https://github.com/julesbozouklian/shark_jack_payload/blob/main/payload/util/install_package.sh
-- Or SSH to the Shark jack and usefollowing command : ``` opkg install msmtp mutt ```
+- Or SSH to the Shark jack and use following command : ``` opkg install msmtp mutt ```
 
 - Edit the ``` /etc/msmtprc ``` file
 ```

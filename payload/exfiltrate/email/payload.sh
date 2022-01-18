@@ -1,9 +1,9 @@
 #!/bin/sh
-# Title: Email
-# Description: Exfiltrate data with email
-# Author: Jules Bozouklian - bozou_client
-# Version: 1.0
-# Category: Exfiltrate
+# Title:        Email
+# Description:  Exfiltrate data with email
+# Author:       Jules Bozouklian - bozou_client
+# Version:      1.0
+# Category:     Exfiltrate
 #
 # LED SETUP (Magenta)... Setting logs and waiting for IP address from DHCP
 # LED ATTACK (Yellow)... Send email
