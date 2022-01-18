@@ -1,4 +1,4 @@
-#!/bin/bh
+#!/bin/sh
 # Title:         Install package
 # Description:   This payload will install the specified package using opkg.
 # Author:        Jules Bozouklian - bozou_client
