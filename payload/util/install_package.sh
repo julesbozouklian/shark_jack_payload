@@ -12,7 +12,6 @@
 #
 
 PACKAGE_TO_INSTALL="nano curl"
-LIST_PACKAGES=0
 LOG_DIR=/root/loot/install_package
 TIMESTAMP=`date +"%Y-%m-%d"`
 
