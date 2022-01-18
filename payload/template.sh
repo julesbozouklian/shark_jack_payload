@@ -1,4 +1,4 @@
-#!/bin/bh
+#!/bin/sh
 # Title:         Template
 # Description:   Description
 # Author:        Jules Bozouklian - bozou_client
