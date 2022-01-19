@@ -7,7 +7,7 @@
 # Category:     Exfiltrate
 #
 # LED SETUP (Magenta)... Setting logs and waiting for IP address from DHCP
-# LED ATTACK (Yellow)... Send email
+# LED ATTACK (Yellow)... Send message
 #
 
 LOG_DIR=/root/loot/exfiltrate/ms-teams
