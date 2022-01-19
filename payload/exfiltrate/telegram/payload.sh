@@ -38,9 +38,8 @@ touch /root/test-file.txt
 
 function sendToTelegram() {
     curl -s -X POST $API_URL -d chat_id=$CHANEL -d text="$MESSAGE"
-		curl -v -F "chat_id=$CHANEL" -F document=/root/test-file.txt $API_FILE_URL
+		curl -v -F "chat_id=$CHANEL" -F document=@/root/test-file.txt $API_FILE_URL
 }
-
 
 sendToTelegram
 

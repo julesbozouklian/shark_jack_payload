@@ -3,5 +3,5 @@
 - Or SSH to the Shark jack and use following command : ``` opkg install curl ```
 
 
-créer un bot
-envoyer un message au bot
+- create a telegram bot
+- send a first message to the bot
